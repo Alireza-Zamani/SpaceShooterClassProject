@@ -17,7 +17,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void MovePlayerWithMouse(Vector2 worldMousePos)
     {
-        if (!(worldMousePos.x <= 2.3f) || !(worldMousePos.x >= -2.3f) || !(worldMousePos.y >= -4.5f) ||
+        if (!(worldMousePos.x <= 2.3f) ||
+            !(worldMousePos.x >= -2.3f) ||
+            !(worldMousePos.y >= -4.5f) ||
             !(worldMousePos.y <= 4.5f)) return;
         
         _rigidbody2D.MovePosition(worldMousePos);
